@@ -10,7 +10,7 @@
                 {
                         "name": "create",
                         "request": {
-                                "url": "http://localhost:9935/audio/audiobook",
+                                "url": "http://localhost:9935/audiobook",
                                 "method": "POST",
                                 "header": [
                                         {
@@ -30,7 +30,7 @@
                 {
                         "name": "get by id",
                         "request": {
-                                "url": "http://localhost:9935/audio/audiobook/1",
+                                "url": "http://localhost:9935/audiobook/1",
                                 "method": "GET",
                                 "header": [
                                         {
@@ -47,7 +47,7 @@
                 {
                         "name": "get all files",
                         "request": {
-                                "url": "http://localhost:9935/audio/audiobook",
+                                "url": "http://localhost:9935/audiobook",
                                 "method": "GET",
                                 "header": [
                                         {
@@ -64,7 +64,7 @@
                 {
                         "name": "update by id",
                         "request": {
-                                "url": "http://localhost:9935/audio/audiobook/1",
+                                "url": "http://localhost:9935/audiobook/1",
                                 "method": "PUT",
                                 "header": [
                                         {
@@ -84,7 +84,7 @@
                 {
                         "name": "delete by id",
                         "request": {
-                                "url": "http://localhost:9935/audio/audiobook/124",
+                                "url": "http://localhost:9935/audiobook/124",
                                 "method": "DELETE",
                                 "header": [
                                         {
