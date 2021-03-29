@@ -1,102 +1,102 @@
 {
-	"variables": [],
-	"info": {
-		"name": "audio server - podcast",
-		"_postman_id": "18142d9e-b900-9a75-ecb6-f11e725743b4",
-		"description": "An audio file server simulation",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
-	},
-	"item": [
-		{
-			"name": "create",
-			"request": {
-				"url": "http://34.233.165.154/audio/podcast",
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\"id\": 111,\n\"name\": \"enjoy enjaami\",\n\"duration\": 200,\n\"host\": \"santhosh narayanan\",\n\"participants\": [\"dhee\", \"arivu\"]\n}"
-				},
-				"description": "POST request to create or upload a song to the audio file server"
-			},
-			"response": []
-		},
-		{
-			"name": "update by id",
-			"request": {
-				"url": "http://34.233.165.154/audio/podcast/111",
-				"method": "PUT",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\"id\": 111,\n\"name\": \"enjoy enjaami\",\n\"duration\": 200,\n\"host\": \"santhosh narayanan\",\n\"participants\": [\"dhee\", \"arivu\", \"\", \"dhee\", \"arivu\", \"\", \"dhee\", \"arivu\", \"\", \"dhee\"]\n}"
-				},
-				"description": "POST request to create or upload a song to the audio file server"
-			},
-			"response": []
-		},
-		{
-			"name": "get all files",
-			"request": {
-				"url": "http://34.233.165.154/audio/podcast",
-				"method": "GET",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": ""
-					}
-				],
-				"body": {},
-				"description": "GET request to get a audiofile by type and id or all audiofiles from the audio file server"
-			},
-			"response": []
-		},
-		{
-			"name": "get by id",
-			"request": {
-				"url": "http://34.233.165.154/audio/podcast/10",
-				"method": "GET",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": ""
-					}
-				],
-				"body": {},
-				"description": "GET request to get a audiofile by type and id from the audio file server"
-			},
-			"response": []
-		},
-		{
-			"name": "delete by id",
-			"request": {
-				"url": "http://34.233.165.154/audio/podcast/99",
-				"method": "DELETE",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": ""
-					}
-				],
-				"body": {},
-				"description": "GET request to get a audiofile by type and id from the audio file server"
-			},
-			"response": []
-		}
-	]
+        "variables": [],
+        "info": {
+                "name": "audio server - podcast",
+                "_postman_id": "18142d9e-b900-9a75-ecb6-f11e725743b4",
+                "description": "An audio file server simulation",
+                "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+        },
+        "item": [
+                {
+                        "name": "create",
+                        "request": {
+                                "url": "http://localhost:9935/podcast",
+                                "method": "POST",
+                                "header": [
+                                        {
+                                                "key": "Content-Type",
+                                                "value": "application/json",
+                                                "description": ""
+                                        }
+                                ],
+                                "body": {
+                                        "mode": "raw",
+                                        "raw": "{\n\"id\": 111,\n\"name\": \"enjoy enjaami\",\n\"duration\": 200,\n\"host\": \"santhosh narayanan\",\n\"participants\": [\"dhee\", \"arivu\"]\n}"
+                                },
+                                "description": "POST request to create or upload a song to the audio file server"
+                        },
+                        "response": []
+                },
+                {
+                        "name": "update by id",
+                        "request": {
+                                "url": "http://localhost:9935/podcast/111",
+                                "method": "PUT",
+                                "header": [
+                                        {
+                                                "key": "Content-Type",
+                                                "value": "application/json",
+                                                "description": ""
+                                        }
+                                ],
+                                "body": {
+                                        "mode": "raw",
+                                        "raw": "{\n\"id\": 111,\n\"name\": \"enjoy enjaami\",\n\"duration\": 200,\n\"host\": \"santhosh narayanan\",\n\"participants\": [\"dhee\", \"arivu\", \"\", \"dhee\", \"arivu\", \"\", \"dhee\", \"arivu\", \"\", \"dhee\"]\n}"
+                                },
+                                "description": "POST request to create or upload a song to the audio file server"
+                        },
+                        "response": []
+                },
+                {
+                        "name": "get all files",
+                        "request": {
+                                "url": "http://localhost:9935/podcast",
+                                "method": "GET",
+                                "header": [
+                                        {
+                                                "key": "Content-Type",
+                                                "value": "application/json",
+                                                "description": ""
+                                        }
+                                ],
+                                "body": {},
+                                "description": "GET request to get a audiofile by type and id or all audiofiles from the audio file server"
+                        },
+                        "response": []
+                },
+                {
+                        "name": "get by id",
+                        "request": {
+                                "url": "http://localhost:9935/podcast/10",
+                                "method": "GET",
+                                "header": [
+                                        {
+                                                "key": "Content-Type",
+                                                "value": "application/json",
+                                                "description": ""
+                                        }
+                                ],
+                                "body": {},
+                                "description": "GET request to get a audiofile by type and id from the audio file server"
+                        },
+                        "response": []
+                },
+                {
+                        "name": "delete by id",
+                        "request": {
+                                "url": "http://localhost:9935/podcast/99",
+                                "method": "DELETE",
+                                "header": [
+                                        {
+                                                "key": "Content-Type",
+                                                "value": "application/json",
+                                                "description": ""
+                                        }
+                                ],
+                                "body": {},
+                                "description": "GET request to get a audiofile by type and id from the audio file server"
+                        },
+                        "response": []
+                }
+        ]
 }
