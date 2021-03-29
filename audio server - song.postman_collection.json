@@ -1,102 +1,102 @@
 {
-	"variables": [],
-	"info": {
-		"name": "audio server - song",
-		"_postman_id": "3f5f85a3-73a0-9837-75ac-75945dbad6bf",
-		"description": "An audio file server simulation",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
-	},
-	"item": [
-		{
-			"name": "create",
-			"request": {
-				"url": "http://34.233.165.154/audio/song",
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\"id\": 110,\n\"name\": \"enjoy enjaami\",\n\"duration\": 200\n}"
-				},
-				"description": "POST request to create or upload a song to the audio file server"
-			},
-			"response": []
-		},
-		{
-			"name": "update by id",
-			"request": {
-				"url": "http://34.233.165.154/audio/song/110",
-				"method": "PUT",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\"id\": 110,\n\"name\": \"enjoy enjaami\",\n\"duration\": 400\n}"
-				},
-				"description": "POST request to create or upload a song to the audio file server"
-			},
-			"response": []
-		},
-		{
-			"name": "get all files",
-			"request": {
-				"url": "http://34.233.165.154/audio/song",
-				"method": "GET",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": ""
-					}
-				],
-				"body": {},
-				"description": "GET request to get a audiofile by type and id or all audiofiles from the audio file server"
-			},
-			"response": []
-		},
-		{
-			"name": "get by id",
-			"request": {
-				"url": "http://34.233.165.154/audio/song/110",
-				"method": "GET",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": ""
-					}
-				],
-				"body": {},
-				"description": "GET request to get a audiofile by type and id from the audio file server"
-			},
-			"response": []
-		},
-		{
-			"name": "delete by id",
-			"request": {
-				"url": "http://34.233.165.154/audio/song/110",
-				"method": "DELETE",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": ""
-					}
-				],
-				"body": {},
-				"description": "GET request to get a audiofile by type and id from the audio file server"
-			},
-			"response": []
-		}
-	]
+        "variables": [],
+        "info": {
+                "name": "audio server - song",
+                "_postman_id": "3f5f85a3-73a0-9837-75ac-75945dbad6bf",
+                "description": "An audio file server simulation",
+                "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+        },
+        "item": [
+                {
+                        "name": "create",
+                        "request": {
+                                "url": "http://localhost:9935/song",
+                                "method": "POST",
+                                "header": [
+                                        {
+                                                "key": "Content-Type",
+                                                "value": "application/json",
+                                                "description": ""
+                                        }
+                                ],
+                                "body": {
+                                        "mode": "raw",
+                                        "raw": "{\n\"id\": 110,\n\"name\": \"enjoy enjaami\",\n\"duration\": 200\n}"
+                                },
+                                "description": "POST request to create or upload a song to the audio file server"
+                        },
+                        "response": []
+                },
+                {
+                        "name": "update by id",
+                        "request": {
+                                "url": "http://localhost:9935/song/110",
+                                "method": "PUT",
+                                "header": [
+                                        {
+                                                "key": "Content-Type",
+                                                "value": "application/json",
+                                                "description": ""
+                                        }
+                                ],
+                                "body": {
+                                        "mode": "raw",
+                                        "raw": "{\n\"id\": 110,\n\"name\": \"enjoy enjaami\",\n\"duration\": 400\n}"
+                                },
+                                "description": "POST request to create or upload a song to the audio file server"
+                        },
+                        "response": []
+                },
+                {
+                        "name": "get all files",
+                        "request": {
+                                "url": "http://localhost:9935/song",
+                                "method": "GET",
+                                "header": [
+                                        {
+                                                "key": "Content-Type",
+                                                "value": "application/json",
+                                                "description": ""
+                                        }
+                                ],
+                                "body": {},
+                                "description": "GET request to get a audiofile by type and id or all audiofiles from the audio file server"
+                        },
+                        "response": []
+                },
+                {
+                        "name": "get by id",
+                        "request": {
+                                "url": "http://localhost:9935/song/110",
+                                "method": "GET",
+                                "header": [
+                                        {
+                                                "key": "Content-Type",
+                                                "value": "application/json",
+                                                "description": ""
+                                        }
+                                ],
+                                "body": {},
+                                "description": "GET request to get a audiofile by type and id from the audio file server"
+                        },
+                        "response": []
+                },
+                {
+                        "name": "delete by id",
+                        "request": {
+                                "url": "http://localhost:9935/song/110",
+                                "method": "DELETE",
+                                "header": [
+                                        {
+                                                "key": "Content-Type",
+                                                "value": "application/json",
+                                                "description": ""
+                                        }
+                                ],
+                                "body": {},
+                                "description": "GET request to get a audiofile by type and id from the audio file server"
+                        },
+                        "response": []
+                }
+        ]
 }
