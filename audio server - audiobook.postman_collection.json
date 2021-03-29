@@ -1,0 +1,102 @@
+{
+	"variables": [],
+	"info": {
+		"name": "audio server - audiobook",
+		"_postman_id": "36e6c63d-f456-ee4f-9996-a63463f5c141",
+		"description": "An audio file server simulation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"url": "http://34.233.165.154/audio/audiobook",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"id\": 124,\n\"title\": \"enjoy enjaami\",\n\"duration\": 200,\n\"author\": \"santhosh narayanan\",\n\"narrator\": \"sony\"\n}"
+				},
+				"description": "POST request to create or upload a song to the audio file server"
+			},
+			"response": []
+		},
+		{
+			"name": "get by id",
+			"request": {
+				"url": "http://34.233.165.154/audio/audiobook/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "GET request to get a audiofile by type and id from the audio file server"
+			},
+			"response": []
+		},
+		{
+			"name": "get all files",
+			"request": {
+				"url": "http://34.233.165.154/audio/audiobook",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "GET request to get a audiofile by type and id or all audiofiles from the audio file server"
+			},
+			"response": []
+		},
+		{
+			"name": "update by id",
+			"request": {
+				"url": "http://34.233.165.154/audio/audiobook/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"id\": 1,\n\"title\": \"enjoy enjaami\",\n\"duration\": 200,\n\"author\": \"santhosh narayanan\",\n\"narrator\": \"sony india\"\n}"
+				},
+				"description": "POST request to create or upload a song to the audio file server"
+			},
+			"response": []
+		},
+		{
+			"name": "delete by id",
+			"request": {
+				"url": "http://34.233.165.154/audio/audiobook/124",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "GET request to get a audiofile by type and id from the audio file server"
+			},
+			"response": []
+		}
+	]
+}
