@@ -46,6 +46,7 @@ Run development server to serve the Flask application:
 
 Navigate to 'http://localhost:9935/audioFileType/audioFileID' to use the endpoint!
 
+## API ENDPOINTS
 create, read, upload, and delete endpoints for an audio file as defined
 below:
 
@@ -65,7 +66,7 @@ of the three audio files (song, podcast, audiobook)
 file
 - The route “audioFileType” will return all the audio files of that type
 
-## MetaData
+## Audio MetaData
 Audio file type can be one of the following:
 1.  Song
 2. Podcast
